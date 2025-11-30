@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <style>
+        body {
+            background-color: #18181b; /* Barva pozadí Twitche, aby to nebliklo bíle */
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p>Otevírám email...</p>
+    
+    <script>
+        // 1. Spustit otevírání emailu
+        window.location.href = "mailto:faxim.business@gmail.com";
+
+        // 2. Počkat 2000 milisekund (2 sekundy) a pak zavřít okno
+        setTimeout(function() {
+            // Trik pro vyšší úspěšnost zavření v Chrome/Edge
+            window.open('', '_self', ''); 
+            window.close();
+        }, 2000);
+    </script>
+</body>
+</html>
